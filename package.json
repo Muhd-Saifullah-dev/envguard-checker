@@ -1,6 +1,6 @@
 {
   "name": "envguard-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple environment variable checker for Node.js applications",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -17,13 +17,13 @@
     "dist"
   ],
   "repository": {
-  "type": "git",
-  "url": "https://github.com/Muhd-Saifullah-dev/envguard-checker.git"
-},
-"bugs": {
-  "url": "https://github.com/Muhd-Saifullah-dev/envguard-checker/issues"
-},
-"homepage": "https://github.com/Muhd-Saifullah-dev/envguard-checker#readme",
+    "type": "git",
+    "url": "https://github.com/Muhd-Saifullah-dev/envguard-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Muhd-Saifullah-dev/envguard-checker/issues"
+  },
+  "homepage": "https://github.com/Muhd-Saifullah-dev/envguard-checker#readme",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs && tsc --emitDeclarationOnly",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
