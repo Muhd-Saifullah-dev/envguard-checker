@@ -1,0 +1,40 @@
+{
+  "name": "envguard-checker",
+  "version": "1.0.0",
+  "description": "Simple environment variable checker for Node.js applications",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs && tsc --emitDeclarationOnly",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "dotenv",
+    "checker",
+    "node",
+    "nodejs"
+  ],
+  "author": "Muhammad Saifullah",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "tsup": "^8.5.0",
+    "tsx": "^4.23.13",
+    "typescript": "^5.0.0"
+  }
+}
